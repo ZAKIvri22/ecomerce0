@@ -7,6 +7,9 @@
   /*   mobile */
 
   @media  screen and (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
        
     #bar{
         position: absolute;
@@ -169,17 +172,18 @@
         
     }
     .best-section{
-       margin: 30px 10px;
+       margin-bottom: 20px;
        height: 60vh;
+
        
     }
    .product1{
     margin: 30px;
-    height: 62vh;
+    height: 68vh;
     
    }
    .product2{
-    height: 62vh;
+    height: 68vh;
    }
    #banner{
     height: 30vh;
