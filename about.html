@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - E-Commerce</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/responsive-about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+  
+    body{
+      overflow-x: hidden;
+    }
+   </style>
+   
+</head>
+<body>
+    
+   <!--header section-->
+
+   <nav>
+    
+        <i class="fas fa-bars " id="bar" style="font-size: 23px;"></i>
+       
+    
+    <i class="fa-solid fa-bag-shopping" id="shop" style="font-size: 23px;"></i>
+    
+    <label for="" class="logo"><img src="./icons/logo-removebg-preview.png" alt="" width="150px" height="90px"></label>
+    <ul id="navbar">
+    
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="">Add carts</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Trackorder</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="">Contact</a></li>
+        <i class="fa-solid fa-xmark" style="font-size: 25px;" id="close"></i>
+    </ul>
+   
+  </nav>
+   <!--  about -->
+    
+   <div class="about">
+    <div class="about-text">
+        <h2>sport categorie</h2>
+       Sports are essential for maintaining a healthy lifestyle and boosting  <br>
+        phisical fitness .they help improve strength ,endurance ,and flexibilty <br>
+         whike also enhacing mental well-being By engaging in regular exercise,<br>
+         individuals can reduce stress and increase energy levels <br>
+         <button>See products</button>
+    </div>
+    <div class="about-img1">
+   <img src="img/football2.jpeg" alt="" width="400px" height="400px" style="border-radius: 10px;">
+    </div>
+
+   </div>
+
+   <div class="about1">
+    <div class="about-img1">
+        <img src="img/img5.jpg" alt="" width="400px" height="400px" style="border-radius: 10px;">
+         </div>
+    <div class="about-text">
+        <h2>Fitness categorie</h2>
+        Discover our premium range of fitness products designed to help  you <br>
+        achieve your health goals . from hight-quality supplements to top-notch<br>
+         workout gear , we've got everything you need to stay on track shop <br>
+         now and take the first step toward a healthier , stronger you !  <br>
+         <button>See products</button>
+    </div>
+ 
+
+   </div>
+
+   <div class="about2">
+   
+    <div class="about-text">
+        <h2>Martial Arts categorie</h2>
+        Elevate your martial arts training with our top-quality gear and <br>
+         zquipment from durable gloves to hight-performance uniforms ,  <br>
+          we provide everything you need to master your craft shop now<br>
+          and take you training to the next level because evert warrior <br>
+        deserves the best <br>
+         <button>See products</button>
+    </div>
+    <div class="about-img1">
+        <img src="img/martial.jpeg" alt="" width="400px" height="400px" style="border-radius: 10px;">
+    </div>
+   
+
+   </div>
+
+
+
+     
+      <!-- Footer -->
+
+
+   
+    <footer >
+        <div class="col">
+          <img src="./icons/logo-removebg-preview.png" width="120px " height="90px" alt="">
+          <h4>Contact</h4>
+          <p>
+            <strong>Address:</strong>
+           Guliz,Marrakech,Morocco
+          </p>
+          <p><strong>Phone:</strong>+01 2222 3665 / (+91) 01 2345 6763</p>
+          <p><strong>Hours:</strong>10:00 - 18:00, Mon - Sat</p>
+  
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fa-brands fa-facebook" style="font-size: 20px;" id="face"></i>
+           <i class="fa-brands fa-instagram" style="margin-left: 10px; font-size: 20px; " id="insta"></i>
+           <i class="fa-brands fa-twitter" style="margin-left: 10px; font-size: 20px;" id="twiter"></i>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col">
+          <h4>About</h4>
+          <a href="">About Us</a>
+          <a href="">Delivery Information</a>
+          <a href="">Privacy Poilcy</a>
+          <a href="">Terms &amp; Condition</a>
+          <a href="">Contact Us</a>
+        </div>
+     
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="">Sign In</a>
+          <a href="">View Cart</a>
+          <a href="">My WishList</a>
+          <a href="">Track My Order</a>
+          <a href="">Help</a>
+        </div>
+     
+        <div class=" install">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="row">
+            <img src="img/app.jpg" alt="app" />
+            <img src="img/play.jpg" alt="play" />
+          </div>
+          <p>Secured Payment Gateways</p>
+          <img src="img/pay.png" alt="pay" />
+        </div>
+        <div class="copyright">
+          <p>©2025 logo. All Rights Reseverd.</p>
+        </div>
+      </footer>
+
+
+      <script>
+        const bar=document.getElementById("bar");
+        const nav =document.getElementById("navbar");
+        const close =document.getElementById("close");
+        if (bar) {
+         bar.addEventListener('click' , () =>{
+           nav.classList.add('active')
+         })
+        }
+        if (close) {
+         close.addEventListener('click' , () =>{
+           nav.classList.remove('active')
+         }) }
+       </script>
+
+
+
+
+
+   
+</body>
+</html>

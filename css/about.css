@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Signika+Negative:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative',sans-serif;
+    }
+body{
+    background-color: white;
+    color: black;
+}
+:root{
+    --primary-color:#135D66;
+}
+
+   /*header section*/
+
+   nav{
+    background-color: #cce7d0;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+     color: white;
+     font-size: 35px;
+     line-height: 80px;
+     padding: 0 100px;
+     font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    position: relative;
+  }
+  nav ul li a{
+    color: #135D66;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.7s all ease;
+  }
+  
+  .checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+#check{
+  display: none;
+}
+ul li a.active,
+ul li  a:hover{
+  color: red;
+}
+ul li a.active::after,
+ul li a:hover::after{
+ content: "";
+ width: 30%;
+ height: 2px;
+ background-color: red;
+ position: absolute;
+ bottom: 26px;
+ left: 15px;
+}
+
+#shop{
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+   /* about us*/
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+   
+   
+  
+} 
+ html{
+    overflow-x: hidden;
+ } 
+ .about-title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    color: gold;
+
+}  
+.about .about-text{
+    margin: 0 40px;
+    padding: 0 40px;
+    font-size: 18px;
+    line-height: 40px;
+    user-select: none;
+   
+}
+.about1 .about-text{
+   
+   
+    font-size: 18px;
+    line-height: 40px;
+    user-select: none;
+}
+.about2 .about-text{
+    font-size: 18px;
+    line-height: 40px;
+    user-select: none;
+}
+
+
+.about-text h2{
+    margin: 20px;
+    color: var(--primary-color);
+   
+    
+}
+.about-text button{
+    padding: 8px 20px;
+    color: black;
+    background-color: #e3fef7;
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: 0.3s all ease;
+    margin-top: 20px;
+
+}
+.about-text button:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
+}
+.about2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 20px;
+    align-items: center;
+}
+.about1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 20px;
+    align-items: center;
+}
+.about1 .about-text{
+    margin: 40px 80px;
+}
+.about2 .about-text{
+    margin: 40px 80px;
+}
+
+  
+
+     /*  footer */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    background-color: black;
+    color: white;
+    padding: 20px;
+    
+    
+    } 
+    
+    footer .col{
+      display: flex;
+     
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    
+    footer .logo{
+      cursor: pointer;
+      margin-bottom: 30px;
+    
+    }
+    
+    footer h4{
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    
+    footer p{
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    
+    footer a{
+      font-size: 13px;
+      text-decoration: none;
+      color: #cce7d0;
+      padding: 10px 0;
+    
+    }
+    
+    footer .follow{
+      margin-top: 30px;
+    }
+    
+    footer .follow .icon{
+      margin-right: 4px;
+      cursor: pointer;
+    }
+    #face{
+      transition: 0.3s ease all;
+    }
+    #face:hover{
+     color: blue;
+     
+    }
+    #insta{
+      transition: 0.3s ease all;
+    }
+    #insta:hover{
+      color: rgb(241, 7, 222);
+      
+    }
+    #twiter{
+      transition: 0.3s ease all;
+    }
+    #twiter:hover{
+      color: aqua;
+     }
+    
+    
+    footer .install .row img{
+      border: 1px solid var(--primary-color);
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer .install img{
+      margin: 10px 0 15px;
+    }
+    
+    footer .copyright{
+      text-align: center;
+      width: 100%;
+    }
